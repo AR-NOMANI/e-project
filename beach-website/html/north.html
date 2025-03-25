@@ -1,0 +1,51 @@
+<!-- North Beaches Page (north.html) -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>North Beaches</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header-title">Explore the Famous Beaches of the North</h1>
+
+        <nav class="navigation">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="south.html">South Beaches</a></li>
+                <li class="nav-item"><a class="nav-link" href="east.html">East Beaches</a></li>
+                <li class="nav-item"><a class="nav-link" href="west.html">West Beaches</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="beach-section">
+        <div class="beach">
+            <h2 class="beach-title">Copacabana Beach, Brazil</h2>
+            <p class="beach-description">Copacabana Beach is a lively destination known for its vibrant atmosphere and stunning scenery. Located in Rio de Janeiro, Brazil, it features a magnificent 2.5-mile (4-km) curved beach surrounded by skyscraper hotels, cafés, nightclubs, and restaurants. This iconic beach is almost a self-contained city, with improved traffic flow thanks to tunnels and a subway system connecting it to other parts of Rio de Janeiro.</p>
+            <img class="beach-image" src="/assets/images/cop.jpg" alt="Waikiki Beach">
+            <button class="get-directions-button" onclick="window.open('https://www.google.com/maps/dir/?api=1&destination=Copacabana+Beach,+Brazil', '_blank')">Get Directions to Copacabana Beach</button>
+            <a href="#" class="download-btn" onclick="downloadFile('pdf')">Download PDF</a>
+            <a href="#" class="download-btn" onclick="downloadFile('doc')">Download DOC</a>
+        </div>
+       
+        <div class="beach">
+            <h2 class="beach-title">Miami Beach, Florida (USA)</h2>
+            <p class="beach-description">Miami Beach is a vibrant island city in South Florida, connected to mainland Miami by bridges. Its wide beaches stretch from North Shore Open Space Park to South Pointe Park, with the famous South Beach known for its celebrity presence and Art Deco architecture. With its lively nightlife, white sands, and turquoise waters, Miami Beach is a premier tourist destination.</p>
+            <img class="beach-image" src="/assets/images/mi.jpg" alt="Waikiki Beach">
+            <button class="get-directions-button" onclick="window.open('https://www.google.com/maps/dir/?api=1&destination=Miami+Beach,+Florida', '_blank')">Get Directions to Miami Beach</button>
+            <a href="#" class="download-btn" onclick="downloadFile('pdf')">Download PDF</a>
+            <a href="#" class="download-btn" onclick="downloadFile('doc')">Download DOC</a>
+        </div>
+    </section>
+    <script src="JS/script.js"></script>
+    <script src="JS/getLocation.js"></script>
+    <script src="JS/filterBeaches.js"></script>
+    <script src="JS/showPosition.js"></script>
+    <script src="JS/showError.js"></script>
+    <script src="JS/downloadFile.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header-title">Feedback</h1>
+        <nav class="navigation">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="form-container">
+        <h2 class="form-title">We Appreciate Your Feedback!</h2>
+        <form id="feedbackForm" class="feedback-form">
+            <label for="name" class="form-label">Your Name:</label>
+            <input type="text" id="name" class="form-input" required>
+
+            <label for="email" class="form-label">Your Email:</label>
+            <input type="email" id="email" class="form-input" required>
+
+            <label for="message" class="form-label">Please Share Your Feedback:</label>
+            <textarea id="message" class="form-textarea" rows="5" required></textarea>
+
+            <button type="submit" class="form-button">Send Feedback</button>
+        </form>
+        <p id="responseMsg" class="response-message"></p>
+
+    </section>
+    <script src="JS/script.js"></script>
+</body>
+</html>
