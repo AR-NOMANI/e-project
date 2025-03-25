@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Of Beaches - Discover Stunning Beaches</title>
+
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header-title">Beauty Of Beaches</h1>
+        <nav class="navigation">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item">
+                    <select id="beachDropdown" class="beach-dropdown" onchange="location = this.value;">
+                        <option value="">Select a Beach</option>
+                        <option value="north.html">North Beaches</option>
+                        <option value="south.html">South Beaches</option>
+                        <option value="east.html">East Beaches</option>
+                        <option value="west.html">West Beaches</option>
+                    </select>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2 class="hero-title">Explore the Beauty of Beaches</h2>
+
+        <input type="text" id="beachSearch" class="beach-search" placeholder="Search for your favorite beaches..." oninput="filterBeaches()">
+
+        <div id="suggestions" class="suggestions-dropdown"></div>
+
+        <p class="hero-description">Travel is not just about visiting new places; it's about immersing yourself in different cultures, creating unforgettable memories, and discovering the beauty of our world. Whether you seek a relaxing beach escape, an adventurous mountain trek, or a cultural city tour, we have the ideal itinerary for you!
+
+            🌍 International & Domestic Tours – Discover exotic destinations around the globe.
+            🏝️ Beach Vacations – Unwind on pristine shores with luxurious accommodations.
+            🏔️ Adventure Trips – Enjoy trekking, safaris, scuba diving, and more!
+            🚗 Customized Road Trips – Explore at your own pace with thoughtfully planned self-drive tours.
+            ✈️ Flight & Hotel Bookings – Effortless travel arrangements at competitive prices.</p>
+
+        <button id="findBeaches" class="find-beaches-button" onclick="getLocation()">Discover Nearby Beaches</button>
+
+        <p id="location-output" class="location-output"></p>
+        <div id="map" class="map"></div>
+    </section>
+
+    <!-- Carousel Section -->
+    <section class="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/assets/images/hak.jpg" alt="Hak Beach">
+            </div>
+            <div class="carousel-item">
+                <img src="/assets/images/image 7.jpg" alt="Image 7 Beach">
+            </div>
+            <div class="carousel-item">
+                <img src="/assets/images/image 1.jpg" alt="Image 1 Beach">
+            </div>
+            <div class="carousel-item">
+                <img src="/assets/images/cop.jpg" alt="Cop Beach">
+            </div>
+            <div class="carousel-item">
+                <img src="/assets/images/clifton.jpg" alt="Clifton Beach">
+            </div>
+            <div class="carousel-item">
+                <img src="/assets/images/cle.jpg" alt="Cle Beach">
+            </div>
+            <div class="carousel-item">
+                <img src="/assets/images/camps-bay.jpg" alt="Camps Bay Beach">
+            </div>
+            <div class="carousel-item">
+                <img src="/assets/images/santa.webp" alt="Santa Beach">
+            </div>
+            <div class="carousel-item">
+                <img src="/assets/images/bon.jpg" alt="Bon Beach">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only"><</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">></span>
+        </a>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Beauty Of Beaches. All Rights Reserved.</p>
+
+        <p>Follow us on:
+            <a href="https://facebook.com" target="_blank">Facebook</a> |
+            <a href="https://instagram.com" target="_blank">Instagram</a> |
+            <a href="mailto:example@gmail.com">example@gmail.com</a>
+        </p>
+    </footer>
+
+    <script src="/JS/contactForm.js"></script>
+    <script src="/JS/downloadFile.js"></script>
+    <script src="/JS/filterBeaches.js"></script>
+    <script src="/JS/getLocation.js"></script>
+    <script src="/JS/script.js"></script>
+    <script src="/JS/showError.js"></script>
+    <script src="/JS/showPosition.js"></script>
+    <script src="/JS/carousel.js"></script>
+
+</body>
+
+</html>
